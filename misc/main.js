@@ -6,11 +6,16 @@ function handleNavigation() {
     document.querySelector(`.navitem a[href="${window.location.hash}"]`).classList.add('active');
   }
 }
+
 window.addEventListener('scroll', () => {
   const topics = document.querySelectorAll('.topic');
   topics.forEach(topic => {
       const rect = topic.getBoundingClientRect();
-      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+      const topIsVisible = rect.bottom >= 0 && rect.top <= window.innerHeight;
+      const bottomIsVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+      const fullyVisible = topIsVisible && bottomIsVisible && rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+      if (fullyVisible) {
           if (window.location.hash !== `#${topic.id}`) {
               history.replaceState(null, null, `#${topic.id}`);
               handleNavigation();
@@ -18,6 +23,8 @@ window.addEventListener('scroll', () => {
       }
   });
 });
+
+
 
 document.querySelectorAll('.navitem a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -34,6 +41,7 @@ document.querySelectorAll('.navitem a[href^="#"]').forEach(anchor => {
         behavior: 'smooth',
         duration: 500
       });
+      handleNavigation();
     }
   });
 });
