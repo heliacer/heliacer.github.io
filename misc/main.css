@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
+:root {
+  font-family: Fredoka, sans-serif;
+}
+
 html{
   background: #1e1b18;
-  font-family: 'fredoka';
 }
 
 body{
@@ -11,7 +14,7 @@ body{
 
 h1,h2,h3,p,em,a{
   color: #fffaff;
-  font-weight: 200;
+  font-weight: 450;
 }
 
 nav{
@@ -29,13 +32,29 @@ nav{
   background: rgba(0, 0, 0, 0.5);
 }
 
+img {
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+footer{
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  height: 60px;
+}
+
 a{
-  display: flex;
+  color: #D8315B;
+  text-decoration: none;
+}
+
+.navitem a{
   height: 25px;
+  display: flex;
   align-items: center;
   gap: 5px;
   font-size: large;
-  text-decoration: none;
   border-radius: 5px;
   transition: 0.2s;
 }
@@ -43,6 +62,10 @@ a{
 .active{
   background: #D8315B;
   padding: 2px 4px;
+}
+
+.typewrite{
+  color: #D8315B;
 }
 
 a[onclick]{
@@ -56,7 +79,16 @@ a[onclick]{
 
 .topic{
   margin: 10rem;
+  max-width: 60rem;
 }
+
+.projects-display{
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+  align-items: center;
+}
+
 
 ::-webkit-scrollbar{
   background: #0F0D0C;
@@ -76,5 +108,20 @@ a[onclick]{
 @media screen and (max-width:720px) {
   .pc{
     display: none;
+  }
+  .navitem{
+    gap: 15px !important;
+  }
+  .topic{
+    margin: 1rem;
+  }
+  nav{
+    justify-content: space-around;
+  }
+  #contact-header{
+    display: none;
+  }
+  footer{
+    display: flex !important;
   }
 }
