@@ -27,25 +27,26 @@ document.querySelectorAll('.navitem a[href^="#"]').forEach(anchor => {
   });
 });
 
+function findMiddle(elements) {
+  const middleY = window.innerHeight / 2;
+  for (let i = 0; i < elements.length; i++) {
+      const element = elements[i];
+      const rect = element.getBoundingClientRect();
+      if (middleY >= rect.top && middleY <= rect.bottom) {
+          return element;
+      }
+  }
+  return null;
+}
+
+
 window.addEventListener('scroll', () => {
   const topics = document.querySelectorAll('.topic');
-  const options = [];
-
-  topics.forEach(topic => {
-    const rect = topic.getBoundingClientRect();
-    options.push({ id: topic.id, distanceToZero: Math.abs(rect.top / rect.bottom) });
-  });
-  let nearestIndex = 0;
-  let nearestDistance = options[0].distanceToZero;
-  for (let i = 1; i < options.length; i++) {
-    if (options[i].distanceToZero < nearestDistance) {
-      nearestIndex = i;
-      nearestDistance = options[i].distanceToZero;
-    }
+  const touchingElement = findMiddle(topics);
+  if (touchingElement){
+    history.replaceState(null, null, `#${touchingElement.id}`);
+    handleNavigation();
   }
-  const nearestId = options[nearestIndex].id;
-  history.replaceState(null, null, `#${nearestId}`);
-  handleNavigation();
 });
 
 
