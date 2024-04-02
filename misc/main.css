@@ -12,7 +12,7 @@ body{
   margin: 0;
 }
 
-h1,h2,h3,p,em,a{
+h1,h2,h3,p,em,a,li{
   color: #fffaff;
   font-weight: 450;
 }
