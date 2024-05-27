@@ -55,13 +55,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-thumb{
+  cursor: grab;
   background: var(--cerise);
   border-radius: 10px;
   margin: 5px;
 }
 
 ::-webkit-scrollbar-thumb:active{
-  background: var(--ghost-white);
+  cursor: grabbing;
 }
 
 .glowball{
