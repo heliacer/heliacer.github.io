@@ -1,7 +1,7 @@
-import './styles/App.css';
 import Navigation from './ui/navigation';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { GlowBallRows } from './ui/misc';
 import { useEffect } from 'react';
 
 function Topic() {
@@ -23,6 +23,7 @@ export default function App() {
   return (
     <>
       <Navigation />
+      <GlowBallRows count={6} distance={1000} radius={100} />
       <p>Work in Progress</p>
       <Topic />
       <Topic />

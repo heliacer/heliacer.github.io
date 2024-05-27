@@ -11,6 +11,7 @@ interface NavLinkProps {
   isActive: boolean;
 }
 
+{/* redo this whole link part, make better nav links */}
 const NavLink: React.FC<NavLinkProps> = ({ name, iconPath, isActive }) => {
   return (
     <a href={`#${name}`} className={isActive ? "active" : ""}>
@@ -24,7 +25,9 @@ export default function Navbar() {
     <nav>
         <img src={Logo} className="logo" alt="Heliacer logo" />
         <NavLink name='about' iconPath='logo.svg' isActive={true} />
-
+        <NavLink name='expertise' iconPath='logo.svg' isActive={false} />
+        <NavLink name='projects' iconPath='logo.svg' isActive={false} />
+        <NavLink name='history' iconPath='logo.svg' isActive={false} />
         {/*
 X
         <div class="navitem" style="gap: 80px;">
