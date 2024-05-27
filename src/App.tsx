@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { GlowBallRows } from './ui/misc';
 import { useEffect } from 'react';
+import GradientDiv from './ui/gradient';
 
 function Topic() {
   useEffect(() => {
@@ -22,17 +23,19 @@ function Topic() {
 export default function App() {
   return (
     <>
-      <Navigation />
-      <GlowBallRows count={6} distance={1000} radius={100} />
-      <p>Work in Progress</p>
-      <Topic />
-      <Topic />
-      <Topic />
-      <Topic />
-      <Topic />
-      <Topic />
-      <Topic />
-      <Topic />
+      <GradientDiv className = {'pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute'}>
+        <Navigation />
+        <GlowBallRows count={6} distance={1000} radius={100} />
+        <p>Work in Progress</p>
+        <Topic />
+        <Topic />
+        <Topic />
+        <Topic />
+        <Topic />
+        <Topic />
+        <Topic />
+        <Topic />
+      </GradientDiv>
     </>
   );
 }

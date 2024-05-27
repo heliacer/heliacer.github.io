@@ -26,6 +26,12 @@ nav{
   gap: 1em;
 }
 
+nav a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 a{
   text-decoration: none;
   color: white;
@@ -40,13 +46,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  height: 3em;
+  height: 2em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  transition: 0.3s;
 }
-.logo:hover {
+
+.logo:active{
+  height: 2.5em;
+}
+.logo:hover, a:hover {
   filter: drop-shadow(0 0 2em var(--cerise));
+  transition: 0.3s;
 }
 
 ::-webkit-scrollbar{

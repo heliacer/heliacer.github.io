@@ -1,5 +1,8 @@
 import React from 'react';
 import Logo from '../assets/logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { IconDefinition, faCube, faFlask, faMeteor, faMugSaucer } from '@fortawesome/free-solid-svg-icons';
+
 
 function capitalize(str: string): string {
   return str.charAt(0).toUpperCase() + str.slice(1);
@@ -7,15 +10,15 @@ function capitalize(str: string): string {
 
 interface NavLinkProps {
   name: string;
-  iconPath: string;
+  icon: IconDefinition;
   isActive: boolean;
 }
 
 {/* redo this whole link part, make better nav links */}
-const NavLink: React.FC<NavLinkProps> = ({ name, iconPath, isActive }) => {
+const NavLink: React.FC<NavLinkProps> = ({ name, icon, isActive }) => {
   return (
     <a href={`#${name}`} className={isActive ? "active" : ""}>
-      <img src={`../assets/${iconPath}`} alt="" />
+      <FontAwesomeIcon icon={icon} />
       <p className="pc">{capitalize(name)}</p>
     </a>
   );
@@ -24,10 +27,10 @@ export default function Navbar() {
     return (
     <nav>
         <img src={Logo} className="logo" alt="Heliacer logo" />
-        <NavLink name='about' iconPath='logo.svg' isActive={true} />
-        <NavLink name='expertise' iconPath='logo.svg' isActive={false} />
-        <NavLink name='projects' iconPath='logo.svg' isActive={false} />
-        <NavLink name='history' iconPath='logo.svg' isActive={false} />
+        <NavLink name='about' icon={faMugSaucer} isActive={true} />
+        <NavLink name='expertise' icon={faFlask} isActive={false} />
+        <NavLink name='projects' icon={faCube} isActive={false} />
+        <NavLink name='history' icon={faMeteor} isActive={false} />
         {/*
 X
         <div class="navitem" style="gap: 80px;">
