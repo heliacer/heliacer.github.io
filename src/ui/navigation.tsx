@@ -1,10 +1,30 @@
+import React from 'react';
 import Logo from '../assets/logo.svg';
 
+function capitalize(str: string): string {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
+interface NavLinkProps {
+  name: string;
+  iconPath: string;
+  isActive: boolean;
+}
+
+const NavLink: React.FC<NavLinkProps> = ({ name, iconPath, isActive }) => {
+  return (
+    <a href={`#${name}`} className={isActive ? "active" : ""}>
+      <img src={`../assets/${iconPath}`} alt="" />
+      <p className="pc">{capitalize(name)}</p>
+    </a>
+  );
+}
 export default function Navbar() {
     return (
     <nav>
         <img src={Logo} className="logo" alt="Heliacer logo" />
+        <NavLink name='about' iconPath='logo.svg' isActive={true} />
+
         {/*
 X
         <div class="navitem" style="gap: 80px;">

@@ -1,5 +1,5 @@
 import './styles/App.css';
-import Navbar from './ui/navbar';
+import Navigation from './ui/navigation';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -22,7 +22,7 @@ function Topic() {
 export default function App() {
   return (
     <>
-      <Navbar />
+      <Navigation />
       <p>Work in Progress</p>
       <Topic />
       <Topic />
