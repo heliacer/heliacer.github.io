@@ -18,16 +18,16 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
+
 nav{
-  background: var(--bg-primary);
-  position: fixed;
   display: flex;
+  position: fixed;
+  top: 0;
+  background: var(--bg-primary);
   align-items: center;
   gap: 1em;
   width: 100%;
-  top: 0;
 }
 
 nav.scrolled{
@@ -41,9 +41,27 @@ nav a{
 }
 
 a{
+  user-select: none;
+  cursor: pointer;
   text-decoration: none;
   color: white;
   transition: 0.3s;
+}
+a:active{
+  transform: translateY(5px);
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.topic{
+  margin: 10rem;
 }
 
 .active{
