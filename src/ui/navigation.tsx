@@ -1,12 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Logo from '../assets/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconDefinition, faCube, faFlask, faMeteor, faMugSaucer } from '@fortawesome/free-solid-svg-icons';
-
-
-function capitalize(str: string): string {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-}
+import { capitalize } from '@mui/material';
 
 interface NavLinkProps {
   name: string;
@@ -14,18 +10,31 @@ interface NavLinkProps {
   isActive: boolean;
 }
 
-{/* redo this whole link part, make better nav links */}
 const NavLink: React.FC<NavLinkProps> = ({ name, icon, isActive }) => {
+  function hashUpdate() {
+    let links = document.querySelectorAll('nav a');
+    links.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === window.location.hash) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  useEffect( ()=> {
+    window.addEventListener('hashchange',hashUpdate)}
+  )
   return (
+    window.removeEventListener('hashchange',hashUpdate),
     <a href={`#${name}`} className={isActive ? "active" : ""}>
       <FontAwesomeIcon icon={icon} />
       <p className="pc">{capitalize(name)}</p>
     </a>
   );
 }
-export default function Navbar() {
+export default function Navbar({className} : {className: string}) {
     return (
-    <nav>
+    <nav className={className}>
         <img src={Logo} className="logo" alt="Heliacer logo" />
         <NavLink name='about' icon={faMugSaucer} isActive={true} />
         <NavLink name='expertise' icon={faFlask} isActive={false} />

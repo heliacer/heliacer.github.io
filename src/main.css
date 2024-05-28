@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
 :root {
+  color-scheme: dark;
   font-family: 'Fredoka', sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -9,8 +10,7 @@
   --bg-secondary: #0f0f0f;
   --royal-blue: #0a2463ff;
   --celestial-blue: #3e92ccff;
-  --ghost-white: #fffaffff;
-  --cerise: #d8315bff;
+  --cerise: #d8315b;
 }  
 
 body {
@@ -18,12 +18,20 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+nav{
+  background: var(--bg-primary);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  top: 0;
 }
 
-nav{
-  display: flex;
-  align-items: self-start;
-  gap: 1em;
+nav.scrolled{
+  border-bottom: white 1px solid;
 }
 
 nav a{
@@ -35,6 +43,7 @@ nav a{
 a{
   text-decoration: none;
   color: white;
+  transition: 0.3s;
 }
 
 .active{
@@ -54,34 +63,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo:active{
-  height: 2.5em;
+  transform: translateY(5px);
 }
-.logo:hover, a:hover {
+
+.logo:hover{
   filter: drop-shadow(0 0 2em var(--cerise));
   transition: 0.3s;
 }
-
-::-webkit-scrollbar{
-  background: transparent;
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb{
-  cursor: grab;
-  background: var(--cerise);
-  border-radius: 10px;
-  margin: 5px;
-}
-
-::-webkit-scrollbar-thumb:active{
-  cursor: grabbing;
-}
-
 .glowball{
   position: absolute;
   border-radius: 50%;
-  height: 20rem;
-  width: 20rem;
   background-color: var(--cerise);
-  filter: blur(250px);
+  filter: blur(200px);
 }
