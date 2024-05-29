@@ -27,11 +27,14 @@
 }
 
 .hero{
+  align-items: center;
+  justify-content: center;
+  display: flex;
   height: 50px;
   padding: 10rem;
 }
 
-.content{
+.content, footer{
   padding: 0 100px
 }
 
@@ -112,3 +115,26 @@ h1, h2, h3, h4, h5, h6 {
   filter: blur(200px);
 }
 
+footer{
+  display: flex;
+  gap: 20px;
+  border-top: rgb(var(--text-rgb)) 1px solid;
+}
+
+footer a{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero{
+    padding: 5rem;
+  }
+  .content, footer{
+    padding: 0 30px;
+  }
+  .pc{
+    display: none;
+  }
+}

@@ -1,9 +1,10 @@
 import Navigation from './ui/navigation';
-import { GlowBallRows } from './ui/misc';
+import { GlowBallRows } from './ui/globall';
 import { useEffect, useState } from 'react';
 import Hero from './ui/hero';
 import Topic from './ui/topic';
 import { about, backend_expertise, frontend_expertise } from './assets/text';
+import Footer from './ui/footer';
 
 export default function App() {
   const [onTop, setOnTop] = useState(true);
@@ -21,7 +22,7 @@ export default function App() {
   return (
     <>
       <Navigation className={onTop ? '' : 'scrolled'}/>
-      <GlowBallRows count={6} distance={1000} radius={100} />
+      <GlowBallRows count={4} distance={1000} radius={100} />
       <div className='content'>
         <Hero />
         <Topic name='about'>
@@ -40,6 +41,7 @@ export default function App() {
           {about}
         </Topic>
       </div>
+      <Footer />
     </>
   );
 }
