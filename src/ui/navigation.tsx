@@ -35,7 +35,9 @@ const NavLink: React.FC<NavLinkProps> = ({ name, icon}) => {
 export default function Navbar({className} : {className: string}) {
     return (
     <nav className={className}>
-        <Link to='hero' smooth spy><img src={Logo} className="logo" alt="Heliacer logo" /></Link>
+        <Link to='hero' smooth spy>
+          <img src={Logo} className="logo" alt="Heliacer logo" />
+        </Link>
         <NavLink name='about' icon={faMugSaucer}/>
         <NavLink name='expertise' icon={faFlask}/>
         <NavLink name='projects' icon={faCube}/>

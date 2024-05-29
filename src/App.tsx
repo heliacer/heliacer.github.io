@@ -6,7 +6,7 @@ import Topic from './ui/topic';
 import { about, backend_expertise, frontend_expertise } from './assets/text';
 
 export default function App() {
-  const [onTop, setOnTop] = useState(false);
+  const [onTop, setOnTop] = useState(true);
   useEffect(() => {
     const onTopHandler = () =>{
       if (window.scrollY > 0) {
@@ -26,11 +26,12 @@ export default function App() {
         <Hero />
         <Topic name='about'>
           {about}
-          {frontend_expertise}
-          {backend_expertise}
         </Topic>
         <Topic name='expertise'>
-          {about}
+          {frontend_expertise}
+          <button>cool button</button>
+          <select><option>option1</option><option>option2</option></select>
+          {backend_expertise}
         </Topic>
         <Topic name='projects'>
           {about}

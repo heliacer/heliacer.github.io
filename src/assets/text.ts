@@ -1,19 +1,18 @@
 export const about = `
-I'm a full-stack Developer with 4 years of coding experience,
-currently a Swiss student in the 3rd grade of Gymnasium at KUS.
-Passionate about learning new technologies and improving skills. 😄
+I'm a full-stack Developer with 4 years of coding experience.
+Currently studying at KUS Gymnasium in Switzerland,
+I'm passionate about learning new technologies and honing my skills. 😄
 `;
 
 export const frontend_expertise = `
-Frontend tooling expertise includes HTML, CSS, and JavaScript,
-with a strong preference for React and Vite.js for faster development.
-Familiarity with Tailwind CSS for styling enhances the workflow.
-Although new to TypeScript, it's already being used in React projects, and progress is swift.
+Frontend development is where I really shine, including HTML, CSS, and JavaScript.
+React and Vite.js are my preferred tools for rapid development.
+While still mastering TypeScript, I've already integrated it seamlessly into my React projects.
 `;
 
 export const backend_expertise = `
-Backend development experience spans Node.js, with growing enthusiasm for Next.js.
-Previous projects include working with Flask and extensive use of Python, particularly for projects involving API wrappers.
-Database management skills include IndexedDB SQL and prior experience with SQLite3, plus using IndexedDB for client-side data storage.
-Currently learning Rust for future projects, and exploring Electron and Tauri for upcoming applications. 😊
+On the backend, I specialize in Node.js and I'm delving into the world of Next.js with enthusiasm.
+Python is my go-to language, especially for projects involving API wrappers.
+Experienced in database management using IndexedDB SQL and SQLite3, with a penchant for client-side data storage solutions like IndexedDB.
+Currently expanding my skill set with Rust and exploring Electron and Tauri for future projects.
 `;
