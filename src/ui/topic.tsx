@@ -1,17 +1,17 @@
 import { capitalize } from "@mui/material";
-import { useEffect } from "react";
-import AOS from 'aos';
 
+export default function Topic({ name, children}: { name: string,children: React.ReactNode}) {
 
-export default function Topic({name} : {name: string}) {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-  
   return (
-    <div id={name} className="topic" data-aos="fade-up">
+    <div id={name} className="topic">
       <h1>{capitalize(name)}</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiisLorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam illum exercitationem ullam, similique, eos quis repudiandae harum nesciunt quibusdam maiores impedit? Repudiandae ipsum esse, eligendi dolores nisi est officiis.</p>
+      {children}
     </div>
   );
+}
+
+
+
+function convertTextToParagraphs(text: string) {
+  return text.split('\n').map((line, index) => <p key={index}>{line}</p>);
 }
