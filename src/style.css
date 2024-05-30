@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
+/* Main components */
 :root {
   color-scheme: dark;
   font-family: 'Fredoka', sans-serif;
@@ -13,7 +14,7 @@
   --background: #171623;
   --text-rgb: 255, 255, 255;
 }
-
+/*
 @media (prefers-color-scheme: light) {
   :root {
     --primary: #970b43;
@@ -25,15 +26,7 @@
     filter: brightness(0) !important;
   }
 }
-
-.hero{
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  height: 50px;
-  padding: 10rem;
-}
-
+*/
 .content, footer{
   padding: 0 100px
 }
@@ -44,6 +37,35 @@ body {
   color: rgba(var(--text-rgb), 0.87);
   background-color: var(--background);
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+footer{
+  display: flex;
+  gap: 20px;
+  border-top: rgb(var(--text-rgb)) 1px solid;
+}
+
+footer a{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.cursor{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  z-index: 9999;
+}
+
+/* Nav */
 nav{
   background:  var(--background);
   position: fixed;
@@ -76,8 +98,22 @@ a:active{
   transform: translateY(5px);
 }
 
+/* Hero */
+.hero{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 50px;
+  padding: 10rem;
+}
+
+/* Topic */
 .topic{
   margin: 50px 0;
+}
+
+section{
+  margin: 20px 0;
 }
 
 .topic p {
@@ -88,10 +124,7 @@ a:active{
   color: var(--primary);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-}
-
+/* Logo */
 .logo {
   height: 2em;
   padding: 1.5em;
@@ -108,6 +141,8 @@ h1, h2, h3, h4, h5, h6 {
   filter: drop-shadow(0 0 2em var(--primary));
   transition: 0.3s;
 }
+
+/* Glowball */
 .glowball{
   position: absolute;
   border-radius: 50%;
@@ -115,19 +150,33 @@ h1, h2, h3, h4, h5, h6 {
   filter: blur(200px);
 }
 
-footer{
-  display: flex;
-  gap: 20px;
-  border-top: rgb(var(--text-rgb)) 1px solid;
+/* Button */
+
+button, input{
+  background: transparent;
+  padding: 10px 20px;
+  border: 1px solid rgb(var(--text-rgb));
+  border-radius: 10px;
+  color: rgb(var(--text-rgb));
+  transition: 0.3s;
 }
 
-footer a{
-  display: flex;
-  gap: 5px;
-  align-items: center;
+button:hover{
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
-@media only screen and (max-width: 600px) {
+button:active{
+  transform: translateY(5px);
+}
+
+/* Utterances */
+.utterances{
+  margin-left: 100px;
+}
+
+/* Misc */
+@media only screen and (max-width: 720px) {
   .hero{
     padding: 5rem;
   }
@@ -135,6 +184,9 @@ footer a{
     padding: 0 30px;
   }
   .pc{
+    display: none;
+  }
+  .cursor{
     display: none;
   }
 }

@@ -5,6 +5,7 @@ import Hero from './ui/hero';
 import Topic from './ui/topic';
 import { about, backend_expertise, frontend_expertise } from './assets/text';
 import Footer from './ui/footer';
+import CustomCursor from './ui/cursor';
 
 export default function App() {
   const [onTop, setOnTop] = useState(true);
@@ -21,6 +22,7 @@ export default function App() {
   });
   return (
     <>
+      <CustomCursor />
       <Navigation className={onTop ? '' : 'scrolled'}/>
       <GlowBallRows count={4} distance={1000} radius={100} />
       <div className='content'>
@@ -31,7 +33,7 @@ export default function App() {
         <Topic name='expertise'>
           {frontend_expertise}
           <button>cool button</button>
-          <select><option>option1</option><option>option2</option></select>
+          <input type="text" placeholder='dummy components' />
           {backend_expertise}
         </Topic>
         <Topic name='projects'>

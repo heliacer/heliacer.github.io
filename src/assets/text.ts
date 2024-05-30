@@ -6,7 +6,7 @@ I'm passionate about learning new technologies and honing my skills. 😄
 
 export const frontend_expertise = `
 Frontend development is where I really shine, including HTML, CSS, and JavaScript.
-React and Vite.js are my preferred tools for rapid development.
+React and Vite.js are my preferred tools for rapid development.\n
 While still mastering TypeScript, I've already integrated it seamlessly into my React projects.
 `;
 
