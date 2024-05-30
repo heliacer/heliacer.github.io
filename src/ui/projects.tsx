@@ -21,7 +21,7 @@ function Project({ name, description, link, image}: ProjectProps) {
 
 export function ScratchProjects() {
   return (
-    <div className='projects'>
+    <div className='scratch-projects'>
       <Project
         name='- Adventure -'
         description='A tile scrolling platformer.'

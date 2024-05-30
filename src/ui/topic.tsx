@@ -7,9 +7,11 @@ interface TopicProps {
 }
 
 export default function Topic({ name, children }: TopicProps) {
-
+  
   function convertToComponent(text: string) {
-    return text.split('\n').map((line) => <p>{line}</p>);
+    return text.split('\n').map((line, index) => 
+      line ? <p key={index}>{line}</p> : <br key={index} />
+    );
   }
 
   const childArray = typeof children === 'string' ? [children] : (Array.isArray(children) ? children : [children]);

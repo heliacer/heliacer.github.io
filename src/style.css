@@ -129,7 +129,7 @@ section{
   color: var(--primary);
 }
 
-.projects{
+.scratch-projects{
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -206,5 +206,8 @@ button:active{
   }
   .cursor{
     display: none;
+  }
+  .scratch-projects{
+    justify-content: center;
   }
 }
