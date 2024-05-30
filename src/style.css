@@ -14,7 +14,7 @@
   --background: #171623;
   --text-rgb: 255, 255, 255;
 }
-/*
+
 @media (prefers-color-scheme: light) {
   :root {
     --primary: #970b43;
@@ -26,7 +26,7 @@
     filter: brightness(0) !important;
   }
 }
-*/
+
 .content, footer{
   padding: 0 100px
 }
@@ -122,6 +122,18 @@ section{
 
 .active{
   color: var(--primary);
+}
+
+.projects{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-background-image{
+  height: 200px;
+  border-radius: 10px;
+  opacity: 0.5;
 }
 
 /* Logo */

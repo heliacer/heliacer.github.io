@@ -3,9 +3,10 @@ import { GlowBallRows } from './ui/globall';
 import { useEffect, useState } from 'react';
 import Hero from './ui/hero';
 import Topic from './ui/topic';
-import { about, backend_expertise, frontend_expertise } from './assets/text';
+import { about, backend_expertise, frontend_expertise, history_journey, history_present, history_start } from './assets/text';
 import Footer from './ui/footer';
 import CustomCursor from './ui/cursor';
+import { ScratchProjects } from './ui/projects';
 
 export default function App() {
   const [onTop, setOnTop] = useState(true);
@@ -40,7 +41,10 @@ export default function App() {
           {about}
         </Topic>
         <Topic name='history'>
-          {about}
+          {history_start}
+          <ScratchProjects />
+          {history_journey}
+          {history_present}
         </Topic>
       </div>
       <Footer />
