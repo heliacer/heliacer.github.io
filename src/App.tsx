@@ -3,7 +3,7 @@ import { GlowBallRows } from './ui/globall';
 import { useEffect, useState } from 'react';
 import Hero from './ui/hero';
 import Topic from './ui/topic';
-import { about, backend_expertise, frontend_expertise, history_journey, history_present, history_start } from './assets/text';
+import { about, backend_expertise, frontend_expertise, history_journey, history_present, history_start, projects } from './assets/text';
 import Footer from './ui/footer';
 import CustomCursor from './ui/cursor';
 import { ScratchProjects } from './ui/projects';
@@ -38,7 +38,7 @@ export default function App() {
           {backend_expertise}
         </Topic>
         <Topic name='projects'>
-          {about}
+          {projects}
         </Topic>
         <Topic name='history'>
           {history_start}

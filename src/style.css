@@ -76,6 +76,11 @@ nav{
   top: 0;
 }
 
+img{
+  z-index: -1;
+  position: relative;
+}
+
 nav.scrolled{
   border-bottom: rgb(var(--text-rgb)) 1px solid;
 }
@@ -185,6 +190,7 @@ button:active{
 /* Utterances */
 .utterances{
   margin-left: 100px;
+  z-index: -1;
 }
 
 /* Misc */

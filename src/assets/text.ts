@@ -36,3 +36,7 @@ It continued with frameworks like React and Next.js, and I even built a website 
 The about me website you see here is my first React project, and I'm proud of how far I've come. 😊
 Nowadays, I'm still on this journey, always looking to level up my skills and become a better developer than I was yesterday..
 `;
+
+export const projects = `
+Lorem Ipsum
+`;
