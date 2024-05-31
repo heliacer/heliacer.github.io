@@ -40,7 +40,7 @@ const icons = [
 
 export default function Hero() {  
   return(
-    <div className="container-animate">
+    <div className="hero">
       <div className="logo-animate"></div>
       {icons.map(icon => (
         <AnimateIcon

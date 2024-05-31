@@ -22,7 +22,7 @@
     --background: #dedff4;
     --text-rgb: 0, 0, 0;
   }
-  .logo{
+  .logo, .logo-animate, .icon-animate{
     filter: brightness(0) !important;
   }
 }
@@ -105,11 +105,12 @@ a:active{
 
 /* Hero */
 .hero{
-  align-items: center;
-  justify-content: center;
   display: flex;
-  height: 50px;
   padding: 10rem;
+  opacity: 0.7;
+  position: relative;
+  height: 600px;
+  z-index: -1;
 }
 
 /* Topic */
@@ -145,8 +146,6 @@ section{
 .logo {
   height: 2em;
   padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
   transition: 0.3s;
 }
 
@@ -194,13 +193,6 @@ button:active{
 }
 
 /* Intro Animation */
-
-
-.container-animate {
-  position: relative;
-  height: 600px;
-  z-index: -1;
-}
 
 .logo-animate {
   width: 100px;
