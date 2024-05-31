@@ -52,7 +52,7 @@ body {
       opacity: 0;
       transform: translate(-50%, -50%) scale(0) rotateX(0deg) rotateY(0deg);
   }
-  50% {
+  10% {
       opacity: 1;
       transform: translate(-50%, -50%) scale(1) rotateX(20deg) rotateY(20deg);
   }
