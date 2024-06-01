@@ -42,9 +42,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-footer{
+.socials{
   display: flex;
   gap: 20px;
+}
+
+footer{
   border-top: rgb(var(--text-rgb)) 1px solid;
 }
 
@@ -195,9 +198,9 @@ button:active{
 /* Intro Animation */
 
 .logo-animate {
-  width: 100px;
-  height: 100px;
-  background: url('/public/logo.svg') no-repeat center center;
+  width: 120px;
+  height: 120px;
+  background: url('/logo.svg') no-repeat center center;
   background-size: contain;
   position: absolute;
   top: 50%;
@@ -213,23 +216,23 @@ button:active{
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0;
-  animation: explode 1s forwards;
+  animation: explode 2s forwards;
 }
 
 @keyframes explode {
   0% {
       opacity: 0;
-      transform: translate(-50%, -50%) scale(0) rotateX(0deg) rotateY(0deg);
+      transform: translate(-50%, -50%) scale(0);
   }
   10% {
       opacity: 0.5;
-      transform: translate(-50%, -50%) scale(1) rotateX(var(--rx1)) rotateY(var(--ry1));
+      transform: translate(-50%, -50%) scale(1) rotateX(var(--rx1)) rotateY(var(--ry1)) rotateZ(var(--rz1));
   }
   100% {
       width: var(--size);
       height: var(--size);
       opacity: 1;
-      transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1) rotateX(var(--rx2)) rotateY(var(--ry2));
+      transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1) rotateX(var(--rx2)) rotateY(var(--ry2)) rotateZ(var(--rz2));
   }
 }
 

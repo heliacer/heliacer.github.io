@@ -26,7 +26,7 @@ export default function App() {
     <>
       <CustomCursor />
       <Navigation className={onTop ? '' : 'scrolled'}/>
-      <GlowBallRows count={4} distance={1000} radius={100} />
+      <GlowBallRows count={5} distance={1000} radius={100} />
       <div className='content'>
         <Hero />
         <Topic name='about'>
