@@ -19,11 +19,11 @@ export default function Topic({ name, children }: TopicProps) {
   return (
     <div id={name} className="topic">
       <h1>{capitalize(name)}</h1>
-      {childArray && childArray.map((child) => (
+      {childArray && childArray.map((child, index) => (
         typeof child === 'string' ? (
-          convertToComponent(child)
+          <div key={`child-${index}`}>{convertToComponent(child)}</div>
         ) : (
-          <section>{child}</section>
+          <section key={`child-${index}`}>{child}</section>
         )
       ))}
     </div>

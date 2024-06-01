@@ -1,9 +1,23 @@
 export const about = 
-`I'm a full-stack Developer with 4 years of coding experience.
-Currently studying at KUS Gymnasium in 🇨🇭 Switzerland.
-I'm passionate about learning new technologies and honing my skills. 😄\n
+`I'm a full-stack developer with four years of coding experience,
+currently studying at KUS Gymnasium in 🇨🇭 Switzerland.
+My passion for technology drives me to constantly learn new technologies and refine my skills.
+What started as a hobby has evolved into a potential career path that I am deeply enthusiastic about. 🚀
+
 I go by the alias Heliacer,
-a name I created purely for its uniqueness, randomness, and the fact that it's easy to remember.`;
+a name I created purely for its uniqueness, randomness,
+and the fact that it's easy to remember. 😊
+
+In my free time, I enjoy building projects and experimenting with new ideas.
+When I'm not coding, you'll likely find me studying, watching anime, or playing the piano. 🎹
+
+I love to challenge myself with creative projects, often exploring the boundaries of what I can do with code.
+Each project is an opportunity to learn and grow.
+I believe in continuous learning and am always on the lookout for new challenges and opportunities to improve.
+This mindset helps me stay ahead in the rapidly evolving field of technology.
+Looking ahead, I aim to leverage my skills and passion to contribute to innovative projects that can make a difference.
+I'm excited about the future and the endless possibilities it holds in the tech world. 🌞
+`;
 
 export const frontend_expertise = 
 `Frontend development is where I really shine, including HTML, CSS, and JavaScript.
@@ -27,7 +41,7 @@ I also started with Discord, creating my own server and apps, mainly for organiz
 as a self-taught coder, learning from online resources and experimenting with new ideas.
 This period was crucial in shaping my coding style and problem-solving skills.\n
 I got curious once about web development and had this wild idea for a Discord app dashboard.
-with no clue about hosting costs or GitHub, but I pushed through, learning frontend and backend development along the way.
+with no clue about hosting costs or GitHub, but I pushed through, learning frontend and backend development along the way.\n
 It continued with frameworks like React and Next.js, and I even built a website for my school's student council.
 The about me website you see here is my first React project, and I'm proud of how far I've come. 😊
 Nowadays, I'm still on this journey, always looking to level up my skills and become a better developer than I was yesterday..`;

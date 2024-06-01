@@ -26,9 +26,10 @@ export default function App() {
     <>
       <CustomCursor />
       <Navigation className={onTop ? '' : 'scrolled'}/>
-      <GlowBallRows count={5} distance={1000} radius={100} />
-      <div className='content'>
+      <GlowBallRows count={4} distance={1000} radius={100} />
+      <div className='main'>
         <Hero />
+        <div className='content'>
         <Topic name='about'>
           {about}
         </Topic>
@@ -47,6 +48,7 @@ export default function App() {
           <ScratchProjects />
           {history2}
         </Topic>
+        </div>
       </div>
       <Footer />
     </>

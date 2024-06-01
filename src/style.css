@@ -27,8 +27,8 @@
   }
 }
 
-.content, footer{
-  padding: 0 100px
+.main{
+  margin: 0 100px
 }
 
 body {
@@ -42,13 +42,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.socials{
+footer {
+  border-top: rgb(var(--text-rgb)) 1px solid;
   display: flex;
   gap: 20px;
+  padding: 20px 100px;
+  flex-wrap: wrap;
 }
 
-footer{
-  border-top: rgb(var(--text-rgb)) 1px solid;
+footer p{
+  margin: 0;
 }
 
 footer a{
@@ -219,6 +222,10 @@ button:active{
   animation: explode 2s forwards;
 }
 
+.content{
+  max-width: 1200px;
+}
+
 @keyframes explode {
   0% {
       opacity: 0;
@@ -237,12 +244,15 @@ button:active{
 }
 
 /* Misc */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 780px) {
+  .project-background-image{
+    height: 150px;
+  }
   .hero{
     padding: 5rem;
   }
-  .content, footer{
-    padding: 0 30px;
+  .main{
+    margin: 0 30px;
   }
   .pc{
     display: none;

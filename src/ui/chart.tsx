@@ -33,6 +33,7 @@ export default function BarChart(){
                 beginAtZero: true,
               },
             },
+            responsive: true,
           },
         });
       }

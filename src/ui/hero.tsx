@@ -12,9 +12,21 @@ interface AnimateIconProps {
 }
 
 
-function AnimateIcon({ dx, dy,rx1,ry1,rz1,rx2,ry2,rz2, name, size} : AnimateIconProps){
+function AnimateIcon({ dx, dy, rx1, ry1, rz1, rx2, ry2, rz2, name, size }: AnimateIconProps) {
+  let limit: number = Infinity;
+  if (window.innerWidth < 1000) {
+    limit = 140;
+    size = size * 0.7;
+  }
+
+  const applyLimit = (value: number, limit: number) => {
+    return Math.max(Math.min(value, limit), -limit);
+  };
+
+  const limitedDx = applyLimit(dx, limit);
+
   const style = {
-    '--dx': `${dx}px`,
+    '--dx': `${limitedDx}px`,
     '--dy': `${dy}px`,
     '--rx1': `${rx1}deg`,
     '--ry1': `${ry1}deg`,
@@ -26,8 +38,8 @@ function AnimateIcon({ dx, dy,rx1,ry1,rz1,rx2,ry2,rz2, name, size} : AnimateIcon
     backgroundImage: `url('/${name}.svg')`,
   };
 
-  return <div className={`icon-animate`} style={style}></div>;
-};
+  return <div className="icon-animate" style={style}></div>;
+}
 
 const icons = [
   { name: 'js', size: 70, dx: 300, dy: -180, rx1: 300, ry1: 100, rz1: 0, rx2: -20, ry2: -40, rz2: -20 },
