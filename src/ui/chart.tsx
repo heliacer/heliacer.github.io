@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
+import { alpha, hexToRgb } from '@mui/material';
 
 const data = [90, 80, 60, 20, 30, 50, 40, 30, 100, 10];
 const labels = ['HTML', 'CSS', 'JS','TS','React', 'Node','Vite','SQL','Python','Rust'];
@@ -9,7 +10,13 @@ export default function BarChart(){
 
   useEffect(() => {
     let chartInstance: Chart | null = null;
-  
+
+    const style = getComputedStyle(document.body);
+    let primary = style.getPropertyValue('--primary').trim();
+    if (!/^#([0-9A-F]{3}){1,2}$/i.test(primary)) {
+      primary = '#000000';  // Fallback color in case primary is not a valid color
+    }
+    
     if (chartRef.current) {
       const ctx = chartRef.current.getContext('2d');
       if (ctx) {
@@ -23,8 +30,8 @@ export default function BarChart(){
               {
                 label: 'Expertise',
                 data: data,
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: alpha(hexToRgb(primary), 0.1),
+                borderColor: hexToRgb(primary),
                 borderWidth: 1,
               },
             ],

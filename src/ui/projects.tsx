@@ -6,7 +6,6 @@ interface ProjectProps {
   description: string;
   link: string;
   image: string;
-
 }
 
 export function Project({ name, description, link, image}: ProjectProps) {
@@ -14,8 +13,7 @@ export function Project({ name, description, link, image}: ProjectProps) {
     <a className="project" onClick={() => window.open(link)}>
       <img draggable="false" src={image} alt={name} className="project-bg" />
       <div>
-        <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
-        <p className="icon-text">{name}</p>
+        <FontAwesomeIcon icon={faArrowUpRightFromSquare}/> {name}
       </div>
       <em>{description}</em>
     </a>

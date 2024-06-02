@@ -3,12 +3,15 @@ import { GlowBallRows } from './ui/globall';
 import { useEffect, useState } from 'react';
 import Hero from './ui/hero';
 import Topic from './ui/topic';
-import { about, backend_expertise, frontend_expertise, history1,history2, history3, history4, projects } from './assets/text';
+import { about, backend_expertise, frontend_expertise, history1,history2, history3, history4, projects1, projects2 } from './assets/text';
+import { DISCORD_INVITE } from './ui/footer';
 import Footer from './ui/footer';
 import CustomCursor from './ui/cursor';
 import { ScratchProjects, Project} from './ui/projects';
 import BarChart from './ui/chart';
 import RepelButton from './ui/repelbutton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 const SOL_LINK = 'https://solprojekte.github.io/versicherungen'
 
@@ -43,7 +46,9 @@ export default function App() {
           <input type="text" placeholder='Guess the number..' />
         </Topic>
         <Topic name='projects'>
-          {projects}
+          {projects1}
+          <p>The bot is still running today, and constantly updated. Try it out on my <a onClick={() => window.open(DISCORD_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> Discord Community</a></p>
+          {projects2}
           <RepelButton />
         </Topic>
         <Topic name='history'>

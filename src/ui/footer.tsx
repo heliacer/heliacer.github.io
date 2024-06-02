@@ -3,6 +3,7 @@ import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faClockRotateLeft, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const V1 = 'https://heliacer.github.io/v1';
+export const DISCORD_INVITE = 'https://discord.gg/DA4mBJX8nb';
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
         <FontAwesomeIcon icon={faGithub}/>
         <p className="pc">Github</p>
       </a>
-      <a onClick={() => window.open('https://discord.gg/DA4mBJX8nb')}>
+      <a onClick={() => window.open(DISCORD_INVITE)}>
         <FontAwesomeIcon icon={faDiscord}/>
         <p className="pc">My Community</p>
       </a>

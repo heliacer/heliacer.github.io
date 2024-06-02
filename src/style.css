@@ -106,7 +106,7 @@ nav a{
 }
 
 a{
-  display: block;
+  display: inline-block;
   cursor: pointer;
   text-decoration: none;
   color: rgb(var(--text-rgb));
@@ -115,6 +115,10 @@ a{
 
 a:active{
   transform: translateY(5px);
+}
+
+a:hover{
+  color: var(--primary);
 }
 
 /* Hero */

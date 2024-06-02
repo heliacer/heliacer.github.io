@@ -53,5 +53,13 @@ export const history4 =
 The about me website you see here is my first React project, and I'm proud of how far I've come. 😊
 Nowadays, I'm still on this journey, always looking to level up my skills and become a better developer than I was yesterday..`;
 
-export const projects =
-`Lorem Ipsum is simply dummy text of the printing and typesetting industry.`;
+export const projects1 =
+`My first ever Projects weren't really that well documented, but I've come a long way since then.
+It was a competition bot for Discord, and it was a mess of spaghetti code. So I'll keep this one brief.
+
+Later on, I created a Discord bot for my server, which was a huge success. It was a great learning experience,
+and I'm proud of how it turned out. The main feature was a Economy system, which was a hit among my friends.
+I remember how I used to spend hours debugging and fixing bugs, while my friend exploited them. 😂`;
+
+export const projects2 = 
+`You can check out the source code on it's Github Repository, but be warned, it's not the best code you'll ever see.`;
