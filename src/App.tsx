@@ -50,7 +50,9 @@ export default function App() {
           {projects1}
           <hr />
           {projects2}
+          {/* this will be the part where all the vixify images go*/}
           <p>The bot is still running today, and constantly updated. Try it out on my <a onClick={() => window.open(DISCORD_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> community</a> or view its <a onClick={() => window.open(VIXIFY_REPO_URL)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> source code.</a></p>
+          <hr />
           <RepelButton />
         </Topic>
         <Topic name='history'>
