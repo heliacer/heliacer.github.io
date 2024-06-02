@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Logo from '/logo.svg'
+import Logo from '/vectors/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconDefinition, faCube, faFlask, faMeteor, faMugSaucer } from '@fortawesome/free-solid-svg-icons';
 import { capitalize } from '@mui/material';

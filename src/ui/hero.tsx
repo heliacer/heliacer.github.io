@@ -35,7 +35,7 @@ function AnimateIcon({ dx, dy, rx1, ry1, rz1, rx2, ry2, rz2, name, size }: Anima
     '--ry2': `${ry2}deg`,
     '--rz2': `${rz2}deg`,
     '--size': `${size}px`,
-    backgroundImage: `url('/${name}.svg')`,
+    backgroundImage: `url('/vectors/${name}.svg')`,
   };
 
   return <div className="icon-animate" style={style}></div>;
