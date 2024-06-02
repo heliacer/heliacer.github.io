@@ -27,8 +27,10 @@ While still mastering TypeScript, I've already integrated it seamlessly into my 
 export const backend_expertise =
 `On the backend, I specialize in Node.js and I'm delving into the world of Next.js with enthusiasm.
 Python is my go-to language, especially for projects involving API wrappers.
-Familiar with database management using IndexedDB SQL and SQLite3, with a penchant for client-side data storage solutions like IndexedDB.
-Currently expanding my skill set with Rust and exploring Electron and Tauri for future projects.`;
+
+Familiar with database management using IndexedDB SQL and SQLite3,
+with a fondness for client-side data storage solutions like IndexedDB.
+Currently expanding my skill set with Rust and exploring Electron and Tauri for future projects. 🛸`;
 
 export const history1 = 
 `It all started when I was a young pupil, attending a Scratch workshop at school.
@@ -39,10 +41,15 @@ export const history2 =
 `A year later, I got into Python, and started dabbling in digital art for UI and logo designs.
 I also started with Discord, creating my own server and apps, mainly for organizing in-game competitions,
 as a self-taught coder, learning from online resources and experimenting with new ideas.
-This period was crucial in shaping my coding style and problem-solving skills.\n
-I got curious once about web development and had this wild idea for a Discord app dashboard.
-with no clue about hosting costs or GitHub, but I pushed through, learning frontend and backend development along the way.\n
-It continued with frameworks like React and Next.js, and I even built a website for my school's student council.
+This period was crucial in shaping my coding style and problem-solving skills.
+`;
+
+export const history3 =
+`I got curious once about web development and had this wild idea for a Discord app dashboard.
+with no clue about hosting costs or GitHub, but I pushed through, learning frontend and backend development along the way.
+`;
+export const history4 =
+`It continued with frameworks like React and Next.js, and I even built a website for a school project.
 The about me website you see here is my first React project, and I'm proud of how far I've come. 😊
 Nowadays, I'm still on this journey, always looking to level up my skills and become a better developer than I was yesterday..`;
 

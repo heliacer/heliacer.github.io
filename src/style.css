@@ -83,8 +83,8 @@ nav{
 }
 
 img{
-  z-index: -1;
   position: relative;
+  z-index: -1;
 }
 
 nav.scrolled{
@@ -92,13 +92,21 @@ nav.scrolled{
 }
 
 nav a{
+  user-select: none;
   display: flex;
   align-items: center;
   gap: 5px;
   opacity: 0.7;
 }
 
+
+.repelButton {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
 a{
+  display: block;
   cursor: pointer;
   text-decoration: none;
   color: rgb(var(--text-rgb));
@@ -142,10 +150,19 @@ section{
   flex-wrap: wrap;
 }
 
-.project-background-image{
-  height: 200px;
+.project-bg{
+  width: 100%;
   border-radius: 10px;
   opacity: 0.5;
+}
+
+.scratch-projects .project-bg{
+  width: 200px;
+}
+
+.icon-text{
+  display: inline;
+  padding-left: 5px;
 }
 
 /* Logo */
@@ -192,10 +209,13 @@ button:active{
   transform: translateY(5px);
 }
 
-/* Utterances */
-.utterances{
-  margin-left: 100px;
-  z-index: -1;
+/* Normal Image */
+
+.image{
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* Intro Animation */
@@ -223,7 +243,7 @@ button:active{
 }
 
 .content{
-  max-width: 1200px;
+  max-width: 900px;
 }
 
 @keyframes explode {
@@ -245,9 +265,6 @@ button:active{
 
 /* Misc */
 @media only screen and (max-width: 780px) {
-  .project-background-image{
-    height: 150px;
-  }
   .hero{
     padding: 5rem;
   }

@@ -13,13 +13,15 @@ export default function BarChart(){
     if (chartRef.current) {
       const ctx = chartRef.current.getContext('2d');
       if (ctx) {
+
+        Chart.defaults.font.family = 'Fredoka';
         chartInstance = new Chart(ctx, {
           type: 'bar',
           data: {
             labels: labels,
             datasets: [
               {
-                label: 'Visual Expertise',
+                label: 'Expertise',
                 data: data,
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',
