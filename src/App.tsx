@@ -14,6 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 const SOL_LINK = 'https://solprojekte.github.io/versicherungen'
+const VIXIFY_REPO_URL = 'https://github.com/heliacer/Vixify'
 
 export default function App() {
   const [onTop, setOnTop] = useState(true);
@@ -49,7 +50,7 @@ export default function App() {
           {projects1}
           <hr />
           {projects2}
-          <p>The bot is still running today, and constantly updated. Try it out on my <a onClick={() => window.open(DISCORD_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> community</a> or view its <a onClick={() => window.open(DISCORD_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> source code.</a></p>
+          <p>The bot is still running today, and constantly updated. Try it out on my <a onClick={() => window.open(DISCORD_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> community</a> or view its <a onClick={() => window.open(VIXIFY_REPO_URL)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> source code.</a></p>
           <RepelButton />
         </Topic>
         <Topic name='history'>
