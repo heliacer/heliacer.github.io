@@ -3,7 +3,7 @@ import { GlowBallRows } from './ui/globall';
 import { useEffect, useState } from 'react';
 import Hero from './ui/hero';
 import Topic from './ui/topic';
-import { about, backend_expertise, frontend_expertise, history1,history2, history3, history4, projects1, projects2 } from './assets/text';
+import {backend_expertise, frontend_expertise, history1,history2, history3, history4, projects1, projects2 } from './assets/text';
 import { DISCORD_INVITE } from './ui/footer';
 import Footer from './ui/footer';
 import CustomCursor from './ui/cursor';
@@ -12,12 +12,14 @@ import BarChart from './ui/chart';
 import RepelButton from './ui/repelbutton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const SOL_LINK = 'https://solprojekte.github.io/versicherungen'
 const VIXIFY_REPO_URL = 'https://github.com/heliacer/Vixify'
 
 export default function App() {
   const [onTop, setOnTop] = useState(true);
+  const { t } = useTranslation();
   useEffect(() => {
     const onTopHandler = () =>{
       if (window.scrollY > 0) {
@@ -38,7 +40,7 @@ export default function App() {
         <Hero />
         <div className='content'>
         <Topic name='about'>
-          {about}
+          {t('about')}
         </Topic>
         <Topic name='expertise'>
           {frontend_expertise}
