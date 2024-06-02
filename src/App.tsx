@@ -47,8 +47,9 @@ export default function App() {
         </Topic>
         <Topic name='projects'>
           {projects1}
-          <p>The bot is still running today, and constantly updated. Try it out on my <a onClick={() => window.open(DISCORD_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> Discord Community</a></p>
+          <hr />
           {projects2}
+          <p>The bot is still running today, and constantly updated. Try it out on my <a onClick={() => window.open(DISCORD_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> community</a> or view its <a onClick={() => window.open(DISCORD_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> source code.</a></p>
           <RepelButton />
         </Topic>
         <Topic name='history'>

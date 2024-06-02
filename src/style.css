@@ -92,7 +92,6 @@ nav.scrolled{
 }
 
 nav a{
-  user-select: none;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -105,7 +104,12 @@ nav a{
   transition: transform 0.2s ease;
 }
 
+br{
+  border: 1px solid rgb(var(--text-rgb));
+}
+
 a{
+  user-select: none;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
