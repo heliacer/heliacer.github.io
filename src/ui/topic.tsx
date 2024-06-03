@@ -29,3 +29,10 @@ export default function Topic({ name, children }: TopicProps) {
     </div>
   );
 }
+
+
+export function VixifyComponents(){
+  return(
+    <div>e</div>
+  )
+}

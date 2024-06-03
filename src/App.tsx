@@ -2,7 +2,7 @@ import Navigation from './ui/navigation';
 import { GlowBallRows } from './ui/globall';
 import { useEffect, useState } from 'react';
 import Hero from './ui/hero';
-import Topic from './ui/topic';
+import Topic, { VixifyComponents } from './ui/topic';
 import {about, backend_expertise, frontend_expertise, history1,history2, history3, history4, projects1, projects2 } from './assets/text'
 import { DISCORD_INVITE } from './ui/footer';
 import Footer from './ui/footer';
@@ -50,6 +50,7 @@ export default function App() {
           {projects1}
           <hr />
           {projects2}
+          <VixifyComponents />
           {/* this will be the part where all the vixify images go*/}
           <p>The bot is still running today, and constantly updated. Try it out on my <a onClick={() => window.open(DISCORD_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> community</a> or view its <a onClick={() => window.open(VIXIFY_REPO_URL)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> source code.</a></p>
           <hr />
