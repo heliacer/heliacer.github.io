@@ -220,10 +220,34 @@ button:active{
 /* Normal Image */
 
 .image{
-  opacity: 0.7;
+  opacity: 0.6;
   width: 100%;
   height: auto;
   border-radius: 10px;
+  user-select: none;
+}
+
+.project-images{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.project-images .image{
+  object-fit: cover;
+  width: 400px;
+  height: 220px;
+}
+
+.logo-card{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.logo-card img{
+  width: 25px;
 }
 
 /* Intro Animation */

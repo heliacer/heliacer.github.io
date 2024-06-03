@@ -1,5 +1,6 @@
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { capitalize } from "@mui/material";
 
 interface ProjectProps {
   name: string;
@@ -50,4 +51,26 @@ export function ScratchProjects() {
       />
     </div>
   );
+}
+
+
+
+export function ProjectImages({images, children}: {images: string[] , children?: React.ReactNode}) {
+  return(
+    <div className="project-images">
+      {images.map((image, index) => (
+        <img key={index} className='image' src={`/images/${image}`} alt="" />
+      ))}
+      {children}
+    </div>
+  )
+}
+
+export function LogoCard({name} : {name: string}) {
+  return (
+    <div className='logo-card'>
+      <img src={`/images/${name}.png`} alt={name} />
+      <em>{capitalize(name)}</em>
+    </div>
+  )
 }

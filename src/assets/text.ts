@@ -53,10 +53,25 @@ export const history4 =
 The about me website you see here is my first React project, and I'm proud of how far I've come. 😊
 Nowadays, I'm still on this journey, always looking to level up my skills and become a better developer than I was yesterday..`;
 
-export const projects1 =
+export const project1 =
 `My first ever Projects weren't really that well documented, but I've come a long way since then.
 It was a competition bot for Discord, and it was a mess of spaghetti code. So I'll keep this one brief. 😅`;
-export const projects2 =
+export const project2 =
 `Later on, I created a Discord bot for my server, which was a huge success. It was a great learning experience,
-and I'm proud of how it turned out. The main feature was a Economy system, which was a hit among my friends.
+and I'm proud of how it turned out. The main feature was a economy system, which was a hit among my friends.
 I remember how I used to spend hours debugging and fixing bugs, while my friend exploited them. 😂`;
+
+export const project3 =
+`The first web project idea came to mind when I thought about how hard it was for me to code Discord apps back then. 
+My goal was to create a platform where users could easily create and manage Discord apps without any coding knowledge.
+I started with the frontend, and although it was a mess, I learned a lot from it.
+
+To provide beautiful visual programming for users, I used Google Blockly,
+which means they don't need to write a single line of code. For a multi-window layout, Golden Layout was implemented,
+and it proved to be worth it despite the confusing documentation.
+
+Most of the initial work was done in vanilla JS, but I'm planning to rewrite it in React soon.
+The site is free to use, hosted on GitHub Pages in a static environment.
+This choice eliminated the need for paid hosting, extra signups, or logins, which I found appealing.
+
+I'm still working on the project and am excited to see where it goes. 🚀`;
