@@ -46,8 +46,7 @@ This period was crucial in shaping my coding style and problem-solving skills.
 
 export const history3 =
 `I got curious once about web development and had this wild idea for a Discord app dashboard.
-with no clue about hosting costs or GitHub, but I pushed through, learning frontend and backend development along the way.
-`;
+with no clue about hosting costs or GitHub, but I pushed through, learning frontend and backend development along the way.`;
 export const history4 =
 `It continued with frameworks like React and Next.js, and I even built a website for a school project.
 The about me website you see here is my first React project, and I'm proud of how far I've come. 😊
@@ -75,3 +74,17 @@ The site is free to use, hosted on GitHub Pages in a static environment.
 This choice eliminated the need for paid hosting, extra signups, or logins, which I found appealing.
 
 I'm still working on the project and am excited to see where it goes. 🚀`;
+
+
+export const project4 =
+`Overall, I haven't had many projects yet, but I'm proud of the ones I've gotten pretty far with.
+I'm currently exploring new technologies, including Rust & Electron while also improving my skills in React, Next.js, and Vite.js.`;
+
+export const project5 = <p>
+  If you have any project ideas or want to collaborate, feel free to reach out to me.<br />
+  I'm always open to new opportunities and challenges. 😊
+  <br /><br />
+  I'm also a part of the EloStack community,
+  which is a start up that aims to provide a platform to create projects and share them with others.
+  We're the first ones to test the platform, and actively use it 🤗 
+</p>

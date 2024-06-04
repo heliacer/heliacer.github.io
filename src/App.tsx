@@ -2,7 +2,7 @@ import Navigation from './ui/navigation';
 import { GlowBallRows } from './ui/globall';
 import { useEffect, useState } from 'react';
 import Hero from './ui/hero';
-import {about, backend_expertise, frontend_expertise, history1,history2, history3, history4, project1, project2, project3, } from './assets/text'
+import * as content from './assets/content'
 import { DISCORD_INVITE } from './ui/footer';
 import Footer from './ui/footer';
 import CustomCursor from './ui/cursor';
@@ -40,32 +40,35 @@ export default function App() {
         <Hero />
         <div className='content'>
         <Topic name='about'>
-          {about}
+          {content.about}
         </Topic>
         <Topic name='expertise'>
-          {frontend_expertise}
+          {content.frontend_expertise}
           <BarChart />
-          {backend_expertise}
+          {content.backend_expertise}
           <input type="text" placeholder='Guess the number..' />
         </Topic>
         <Topic name='projects'>
-          {project1}
+          {content.project1}
           <hr />
           <LogoCard name='vixify'/>
-          {project2}
+          {content.project2}
           <ProjectImages images={DiscordImages}>
             <em>A little glimpse of the Vixify economy Bot.</em>
           </ProjectImages>
           <p>The bot is still running today, and constantly updated. Try it out on my <a onClick={() => window.open(DISCORD_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> community</a> or view its <a onClick={() => window.open(VIXIFY_REPO_URL)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> source code.</a></p>
           <hr />
           <LogoCard name='graplet'/>
-          {project3}
+          {content.project3}
+          <hr />
+          {content.project4}
+          {content.project5}
           <RepelButton />
         </Topic>
         <Topic name='history'>
-          {history1}
+          {content.history1}
           <ScratchProjects />
-          {history2}
+          {content.history2}
           <>
             <img className='image' src="/images/timelapse.png" alt="" />
             <em>Timelapse of Heliacer's logos.</em>
@@ -74,9 +77,9 @@ export default function App() {
             <img className='image' src="/images/graplet_lab.png" alt="" />
             <em>First attempt on designing a interactive web app.</em>
           </>
-          {history3}
+          {content.history3}
           <Project name='Solprojekte' description='Simple webpage of a school economy project' link={SOL_LINK} image='/images/solsnippet.png' />
-          {history4}
+          {content.history4}
         </Topic>
         </div>
       </div>
