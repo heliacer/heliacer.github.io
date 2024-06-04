@@ -7,7 +7,7 @@ export const DISCORD_INVITE = 'https://discord.gg/DA4mBJX8nb';
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id="contact-me">
       <p>© 2024 Heliacer</p>
       <em>Made with ❤️ using React & Vite</em>
       <a onClick={() => window.open('https://github.com/heliacer')}>

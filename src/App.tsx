@@ -15,6 +15,7 @@ import Topic from './ui/topic';
 
 const SOL_LINK = 'https://solprojekte.github.io/versicherungen'
 const VIXIFY_REPO_URL = 'https://github.com/heliacer/Vixify'
+const GRAPLET_REPO_URL = 'https://github.com/graplet/graplet.github.io'
 
 export default function App() {
   const [onTop, setOnTop] = useState(true);
@@ -35,7 +36,7 @@ export default function App() {
     <>
       <CustomCursor />
       <Navigation className={onTop ? '' : 'scrolled'}/>
-      <GlowBallRows count={4} distance={1000} radius={100} />
+      <GlowBallRows count={7} distance={1000} radius={100} />
       <div className='main'>
         <Hero />
         <div className='content'>
@@ -59,7 +60,18 @@ export default function App() {
           <p>The bot is still running today, and constantly updated. Try it out on my <a onClick={() => window.open(DISCORD_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> community</a> or view its <a onClick={() => window.open(VIXIFY_REPO_URL)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> source code.</a></p>
           <hr />
           <LogoCard name='graplet'/>
+          <div style={{maxWidth:500}}>
+            <img className='image' src="/vectors/graph.svg" alt=""/>
+            <em>Hero image on the landing page.</em>
+          </div>
           {content.project3}
+          <>
+            <img className='image' src="/images/block.png" alt="" />
+            <em>A welcoming message once a member joins.</em>
+          </>
+          <p>
+            The site is not up and running as of now, but feel free to check out the <a onClick={() => window.open(GRAPLET_REPO_URL)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> Github Repository</a> 🚀
+          </p>
           <hr />
           {content.project4}
           {content.project5}

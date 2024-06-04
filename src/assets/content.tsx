@@ -1,3 +1,10 @@
+import { Link } from "react-scroll";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+
+
+const ELOSTACK_INVITE = 'https://discord.gg/eyXZx6bbgj';
+
 export const about = 
 `I'm a full-stack developer with four years of coding experience,
 currently studying at KUS Gymnasium in 🇨🇭 Switzerland.
@@ -12,11 +19,9 @@ In my free time, I enjoy building projects and experimenting with new ideas.
 When I'm not coding, you'll likely find me studying, watching anime, or playing the piano. 🎹
 
 I love to challenge myself with creative projects, often exploring the boundaries of what I can do with code.
-Each project is an opportunity to learn and grow.
-I believe in continuous learning and am always on the lookout for new challenges and opportunities to improve.
-This mindset helps me stay ahead in the rapidly evolving field of technology.
+Each project is an opportunity to learn and grow. 🌱
 Looking ahead, I aim to leverage my skills and passion to contribute to innovative projects that can make a difference.
-I'm excited about the future and the endless possibilities it holds in the tech world. 🌞
+I'm excited about the future and the endless possibilities it holds in our tech world. 🌌
 `;
 
 export const frontend_expertise = 
@@ -25,7 +30,7 @@ React and Vite.js are my preferred tools for rapid development.
 While still mastering TypeScript, I've already integrated it seamlessly into my React projects.`;
 
 export const backend_expertise =
-`On the backend, I specialize in Node.js and I'm delving into the world of Next.js with enthusiasm.
+`On the backend, I specialize in Node.js with a focus on Nextjs.
 Python is my go-to language, especially for projects involving API wrappers.
 
 Familiar with database management using IndexedDB SQL and SQLite3,
@@ -49,7 +54,6 @@ export const history3 =
 with no clue about hosting costs or GitHub, but I pushed through, learning frontend and backend development along the way.`;
 export const history4 =
 `It continued with frameworks like React and Next.js, and I even built a website for a school project.
-The about me website you see here is my first React project, and I'm proud of how far I've come. 😊
 Nowadays, I'm still on this journey, always looking to level up my skills and become a better developer than I was yesterday..`;
 
 export const project1 =
@@ -58,7 +62,7 @@ It was a competition bot for Discord, and it was a mess of spaghetti code. So I'
 export const project2 =
 `Later on, I created a Discord bot for my server, which was a huge success. It was a great learning experience,
 and I'm proud of how it turned out. The main feature was a economy system, which was a hit among my friends.
-I remember how I used to spend hours debugging and fixing bugs, while my friend exploited them. 😂`;
+I remember how I used to spend hours debugging and fixing bugs, while my friends exploited them. 😆`;
 
 export const project3 =
 `The first web project idea came to mind when I thought about how hard it was for me to code Discord apps back then. 
@@ -66,25 +70,25 @@ My goal was to create a platform where users could easily create and manage Disc
 I started with the frontend, and although it was a mess, I learned a lot from it.
 
 To provide beautiful visual programming for users, I used Google Blockly,
-which means they don't need to write a single line of code. For a multi-window layout, Golden Layout was implemented,
+which means they don't need to write a single line of code. For a multi-window layout, I used Golden Layout,
 and it proved to be worth it despite the confusing documentation.
 
 Most of the initial work was done in vanilla JS, but I'm planning to rewrite it in React soon.
 The site is free to use, hosted on GitHub Pages in a static environment.
-This choice eliminated the need for paid hosting, extra signups, or logins, which I found appealing.
+This choice eliminated the need for paid hosting, extra signups, or logins, which I found appealing.`;
 
-I'm still working on the project and am excited to see where it goes. 🚀`;
 
 
 export const project4 =
 `Overall, I haven't had many projects yet, but I'm proud of the ones I've gotten pretty far with.
-I'm currently exploring new technologies, including Rust & Electron while also improving my skills in React, Next.js, and Vite.js.`;
+I'm currently exploring new technologies, including Rust & Electron while also improving my skills in React, Next.js, and Vite.js.
+This about me website is my first React project, and I'm proud of how far I've come. 😊`;
 
 export const project5 = <p>
-  If you have any project ideas or want to collaborate, feel free to reach out to me.<br />
-  I'm always open to new opportunities and challenges. 😊
+  If you have any project ideas or want to collaborate, feel free to <Link offset={-80} smooth spy to="contact-me">reach me out <FontAwesomeIcon icon={faCaretDown} /></Link><br />
+  I'm always open to new opportunities and challenges. 🚀
   <br /><br />
-  I'm also a part of the EloStack community,
+  I'm also a part of the <a onClick={() => window.open(ELOSTACK_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> Elostack community</a>     ,
   which is a start up that aims to provide a platform to create projects and share them with others.
   We're the first ones to test the platform, and actively use it 🤗 
 </p>
