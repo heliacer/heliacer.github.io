@@ -77,11 +77,12 @@ footer a{
 
 /* Nav */
 nav{
+  padding: 10px 100px;
   background:  var(--background);
   position: fixed;
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 20px;
   width: 100%;
   top: 0;
 }
@@ -179,8 +180,7 @@ section{
 
 /* Logo */
 .logo {
-  height: 2em;
-  padding: 1.5em;
+  height: 30px;
   transition: 0.3s;
 }
 
@@ -315,5 +315,8 @@ button:active{
   }
   .scratch-projects{
     justify-content: center;
+  }
+  nav{
+    padding: 20px 30px;
   }
 }
