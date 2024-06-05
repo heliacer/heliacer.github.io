@@ -47,7 +47,10 @@ export default function App() {
           {content.frontend_expertise}
           <BarChart />
           {content.backend_expertise}
-          <input type="text" placeholder='Type the number..' /> <button>Guess!</button>
+          <>
+            <input type="text" placeholder='Type the number..' />
+            <button type='submit'>Guess!</button>
+          </>
         </Topic>
         <Topic name='projects'>
           {content.project1}

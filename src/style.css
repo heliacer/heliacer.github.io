@@ -42,6 +42,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+input[type='text']{
+  margin-right: 10px;
+}
+
 em{
   z-index: -1;
 }
@@ -181,6 +185,7 @@ section{
 /* Logo */
 .logo {
   height: 30px;
+  width: 30px;
   transition: 0.3s;
 }
 
@@ -306,6 +311,9 @@ button:active{
   }
   .main{
     margin: 0 30px;
+  }
+  footer{
+    padding: 20px 30px;
   }
   .pc{
     display: none;
