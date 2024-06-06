@@ -39,7 +39,7 @@ export default function Navbar({className} : {className: string}) {
     };
     return (
     <nav className={className}>
-      <Link to="hero" smooth spy>
+      <Link className='logo-header' to="hero" smooth spy>
         <img src={Logo} className="logo" alt="Heliacer logo" />
       </Link>
       <div className="burger" onClick={toggleMenu}>

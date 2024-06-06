@@ -112,8 +112,6 @@ nav.scrolled{
 .burger{
   cursor: pointer;
   display: none;
-  float: right;
-  transform: translateX(-50px);
 }
 
 .bar1, .bar2, .bar3 {
@@ -349,17 +347,25 @@ button:active{
     justify-content: center;
   }
   nav{
-    padding: 20px 30px;
-    display: block  ;
+    padding: 0;
+    display: block;
+  }
+  .logo-header{
+    top: 20px;
+    right: 20px;
+    position: absolute;
   }
   .menu-container{
     display: none;
+    margin-left: 20px;
   }
   .menu-container.open{
     display: block ;
   }
   .burger{
     display: block;
+    width: fit-content;
+    padding: 20px;
   }
 }
 
