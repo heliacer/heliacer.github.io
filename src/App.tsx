@@ -8,10 +8,9 @@ import Footer from './ui/footer';
 import CustomCursor from './ui/cursor';
 import { ScratchProjects, Project, ProjectImages, LogoCard} from './ui/projects';
 import BarChart from './ui/chart';
-import RepelButton from './ui/repelbutton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-import Topic from './ui/topic';
+import Topic, { GuessTheNumber } from './ui/topic';
 
 const SOL_LINK = 'https://solprojekte.github.io/versicherungen'
 const VIXIFY_REPO_URL = 'https://github.com/heliacer/Vixify'
@@ -47,10 +46,7 @@ export default function App() {
           {content.frontend_expertise}
           <BarChart />
           {content.backend_expertise}
-          <>
-            <input type="text" placeholder='Type the number..' />
-            <button type='submit'>Guess!</button>
-          </>
+          <GuessTheNumber />
         </Topic>
         <Topic name='projects'>
           {content.project1}
@@ -78,7 +74,6 @@ export default function App() {
           <hr />
           {content.project4}
           {content.project5}
-          <RepelButton />
         </Topic>
         <Topic name='history'>
           {content.history1}
