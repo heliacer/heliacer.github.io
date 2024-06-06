@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '/vectors/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconDefinition, faCube, faFlask, faMeteor, faMugSaucer } from '@fortawesome/free-solid-svg-icons';
@@ -28,20 +28,31 @@ const NavLink: React.FC<NavLinkProps> = ({ name, icon}) => {
     window.removeEventListener('hashchange',hashUpdate),
     <Link offset={-100} activeClass="active" smooth spy to={name}>
       <FontAwesomeIcon icon={icon} />
-      <p className="pc">{capitalize(name)}</p>
+      <p>{capitalize(name)}</p>
     </Link>
   );
 }
 export default function Navbar({className} : {className: string}) {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
     return (
     <nav className={className}>
-        <Link to='hero' smooth spy>
-          <img src={Logo} className="logo" alt="Heliacer logo" />
-        </Link>
-        <NavLink name='about' icon={faMugSaucer}/>
-        <NavLink name='expertise' icon={faFlask}/>
-        <NavLink name='projects' icon={faCube}/>
-        <NavLink name='history' icon={faMeteor}/>
+      <Link to="hero" smooth spy>
+        <img src={Logo} className="logo" alt="Heliacer logo" />
+      </Link>
+      <div className="burger" onClick={toggleMenu}>
+        <div className={`bar1 ${isMenuOpen ? 'open' : ''}`} />
+        <div className={`bar2 ${isMenuOpen ? 'open' : ''}`} />
+        <div className={`bar3 ${isMenuOpen ? 'open' : ''}`} />
+      </div>
+      <div className={`menu-container ${isMenuOpen ? 'open' : ''}`}>
+        <NavLink name="about" icon={faMugSaucer} />
+        <NavLink name="expertise" icon={faFlask} />
+        <NavLink name="projects" icon={faCube} />
+        <NavLink name="history" icon={faMeteor} />
+      </div>
       </nav>
     );     
 }

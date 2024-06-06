@@ -96,13 +96,46 @@ nav.scrolled{
   border-bottom: rgb(var(--text-rgb)) 1px solid;
 }
 
-nav a{
+.menu-container a{
   display: flex;
   align-items: center;
   gap: 5px;
   opacity: 0.7;
 }
 
+.menu-container{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.burger{
+  cursor: pointer;
+  display: none;
+  float: right;
+  transform: translateX(-50px);
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px; 
+  background-color: rgb(var(--text-rgb));
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 5px; 
+}
+
+.open.bar1 {
+  transform: translate(0, 9px) rotate(-45deg);
+}
+
+.open.bar2 {
+  opacity: 0;
+}
+
+.open.bar3 {
+  transform: translate(0, -9px) rotate(45deg);
+}
 
 .repelButton {
   cursor: pointer;
@@ -181,16 +214,12 @@ section{
 /* Logo */
 .logo {
   height: 30px;
+  width: 30px;
   transition: 0.3s;
 }
 
 .logo:active{
   transform: translateY(5px);
-}
-
-.logo:hover{
-  filter: drop-shadow(0 0 2em var(--primary));
-  transition: 0.3s;
 }
 
 /* Glowball */
@@ -307,6 +336,9 @@ button:active{
   .main{
     margin: 0 30px;
   }
+  footer{
+    padding: 20px 30px;
+  }
   .pc{
     display: none;
   }
@@ -318,5 +350,17 @@ button:active{
   }
   nav{
     padding: 20px 30px;
+    display: block  ;
+  }
+  .menu-container{
+    display: none;
+  }
+  .menu-container.open{
+    display: block ;
+  }
+  .burger{
+    display: block;
   }
 }
+
+
