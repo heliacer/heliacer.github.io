@@ -34,7 +34,7 @@ export default function Topic({ name, children }: TopicProps) {
 export function GuessTheNumber() {
   const [inputValue, setInputValue] = useState<string>('');
   const [feedback, setFeedback] = useState<string>('');
-  const [numberToGuess, setNumberToGuess] = useState<number>(Math.floor(Math.random() * 100));
+  const [numberToGuess] = useState<number>(Math.floor(Math.random() * 100));
   const [showConfetti, setShowConfetti] = useState<boolean>(false);
 
   function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
