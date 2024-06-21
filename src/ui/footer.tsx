@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faClockRotateLeft, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const V1 = 'https://heliacer.github.io/v1';
 export const DISCORD_INVITE = 'https://discord.gg/DA4mBJX8nb';
 
 export default function Footer() {
@@ -21,10 +20,6 @@ export default function Footer() {
       <a onClick={() => window.open('mailto:heliacer35@gmail.com')}>
         <FontAwesomeIcon icon={faEnvelope}/>
         <p className="pc">Email Me</p>
-      </a>
-      <a href={V1}>
-      <FontAwesomeIcon icon={faClockRotateLeft}></FontAwesomeIcon>
-      <em>Go back in time</em>
       </a>
     </footer>
   );
