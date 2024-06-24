@@ -7,6 +7,11 @@ import CustomCursor from './utils/cursor';
 import Paragraph from './utils/paragraph';
 import { aboutMe } from './content';
 
+import { animateScroll as scroll } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
+
 export default function App() {
   const [onTop, setOnTop] = useState(true);
     useEffect(() => {
@@ -26,6 +31,9 @@ export default function App() {
       <Navigation className={onTop ? '' : 'scrolled'}/>
       <GlowBallRows count={7} distance={1000} radius={100} />
       <Hero />
+      <a onClick={() => scroll.scrollTo(800)} className='chevron'>
+        <FontAwesomeIcon icon={faChevronDown}/>
+      </a>
       <main>
         <Paragraph id='about' text={aboutMe}/>
       </main>

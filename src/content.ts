@@ -1,11 +1,12 @@
 export const aboutMe = 
-`Hey, I'm Heliacer!
+`Hey, I'm Heliacer! 👋
 I'm a full-stack developer with four years of coding experience,
 currently studying at KUS Gymnasium in 🇨🇭 Switzerland.
 
-Outside of coding, I enjoy studying and playing the piano. 🎹
-I thrive on challenging myself with creative projects, consistently pushing the limits of my abilities.
-What started as a hobby has evolved into a passion for creating lightweight, and beautiful Applications. 🌌
+Outside of coding, I study and enjoy playing the piano. 🎹
+I challenge myself with creative projects, consistently pushing the limits of my abilities.
+What started as a hobby has evolved into a passion for creating lightweight & beautiful Applications 🌌
+
 `;
 
 
