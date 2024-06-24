@@ -1,0 +1,38 @@
+@media only screen and (max-width: 780px) {
+  .hero {
+    padding: 5rem;
+  }
+  main {
+    margin: 0 30px;
+  }
+  footer {
+    padding: 20px 30px;
+  }
+  .pc {
+    display: none;
+  }
+  .cursor {
+    display: none;
+  }
+  nav {
+    padding: 0;
+    display: block;
+  }
+  .logo-header {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+  }
+  .menu-container {
+    display: none;
+    margin-left: 20px;
+  }
+  .menu-container.open {
+    display: block;
+  }
+  .burger {
+    display: block;
+    width: fit-content;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+.cursor {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.1;
+  z-index: 9999;
+}
+
+.glowball {
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--primary);
+  filter: blur(200px);
+}
+
+.content {
+  max-width: 900px;
+}

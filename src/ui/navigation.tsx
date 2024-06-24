@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Logo from '/vectors/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconDefinition, faCube, faFlask, faMeteor, faMugSaucer } from '@fortawesome/free-solid-svg-icons';
+import { IconDefinition, faCube, faFlask, faMugSaucer } from '@fortawesome/free-solid-svg-icons';
 import { capitalize } from '@mui/material';
 import { Link } from 'react-scroll';
 
@@ -51,7 +51,6 @@ export default function Navbar({className} : {className: string}) {
         <NavLink name="about" icon={faMugSaucer} />
         <NavLink name="expertise" icon={faFlask} />
         <NavLink name="projects" icon={faCube} />
-        <NavLink name="history" icon={faMeteor} />
       </div>
       </nav>
     );     

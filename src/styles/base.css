@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: rgba(var(--text-rgb), 0.87);
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+a {
+  user-select: none;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(var(--text-rgb));
+  transition: 0.3s;
+}
+
+a:active {
+  transform: translateY(5px);
+}
+
+a:hover {
+  color: var(--primary);
+}

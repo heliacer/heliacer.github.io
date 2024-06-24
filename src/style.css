@@ -42,10 +42,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-em{
-  z-index: -1;
-}
-
 footer {
   border-top: rgb(var(--text-rgb)) 1px solid;
   display: flex;
@@ -85,11 +81,6 @@ nav{
   gap: 20px;
   width: 100%;
   top: 0;
-}
-
-img{
-  position: relative;
-  z-index: -1;
 }
 
 nav.scrolled{
@@ -135,15 +126,6 @@ nav.scrolled{
   transform: translate(0, -9px) rotate(45deg);
 }
 
-.repelButton {
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-br{
-  border: 1px solid rgb(var(--text-rgb));
-}
-
 a{
   user-select: none;
   display: inline-block;
@@ -169,44 +151,6 @@ a:hover{
   position: relative;
   height: 600px;
   z-index: -1;
-}
-
-/* Topic */
-.topic{
-  margin: 50px 0;
-}
-
-section{
-  margin: 20px 0;
-}
-
-.topic p {
-  margin: 0;
-}
-
-.active{
-  color: var(--primary);
-}
-
-.scratch-projects{
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.project-bg{
-  width: 100%;
-  border-radius: 10px;
-  opacity: 0.5;
-}
-
-.scratch-projects .project-bg{
-  width: 200px;
-}
-
-.icon-text{
-  display: inline;
-  padding-left: 5px;
 }
 
 /* Logo */
@@ -246,39 +190,6 @@ button:hover{
 
 button:active{
   transform: translateY(5px);
-}
-
-/* Normal Image */
-
-.image{
-  opacity: 0.6;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  user-select: none;
-}
-
-.project-images{
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.project-images .image{
-  object-fit: cover;
-  width: 400px;
-  height: 220px;
-}
-
-.logo-card{
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-
-.logo-card img{
-  width: 25px;
 }
 
 /* Intro Animation */
@@ -342,9 +253,6 @@ button:active{
   }
   .cursor{
     display: none;
-  }
-  .scratch-projects{
-    justify-content: center;
   }
   nav{
     padding: 0;

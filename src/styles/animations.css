@@ -1,0 +1,38 @@
+.logo-animate {
+  width: 120px;
+  height: 120px;
+  background: url('/vectors/logo.svg') no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-animate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(20deg) rotateY(20deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: explode 2s forwards;
+}
+
+@keyframes explode {
+  0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0);
+  }
+  10% {
+      opacity: 0.5;
+      transform: translate(-50%, -50%) scale(1) rotateX(var(--rx1)) rotateY(var(--ry1)) rotateZ(var(--rz1));
+  }
+  100% {
+      width: var(--size);
+      height: var(--size);
+      opacity: 1;
+      transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1) rotateX(var(--rx2)) rotateY(var(--ry2)) rotateZ(var(--rz2));
+  }
+}

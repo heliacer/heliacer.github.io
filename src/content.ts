@@ -1,28 +1,17 @@
-import { Link } from "react-scroll";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUpRightFromSquare, faCaretDown } from "@fortawesome/free-solid-svg-icons";
-
-
-const ELOSTACK_INVITE = 'https://discord.gg/eyXZx6bbgj';
-
-export const about = 
-`I'm a full-stack developer with four years of coding experience,
+export const aboutMe = 
+`Hey, I'm Heliacer!
+I'm a full-stack developer with four years of coding experience,
 currently studying at KUS Gymnasium in 🇨🇭 Switzerland.
-My passion for technology drives me to constantly learn new technologies and refine my skills.
-What started as a hobby has evolved into a potential career path that I am deeply enthusiastic about. 🚀
 
-I go by the alias Heliacer,
-a name I created purely for its uniqueness, randomness,
-and the fact that it's easy to remember. 😊
-
-In my free time, I enjoy building projects and experimenting with new ideas.
-When I'm not coding, you'll likely find me studying, watching anime, or playing the piano. 🎹
-
-I love to challenge myself with creative projects, often exploring the boundaries of what I can do with code.
-Each project is an opportunity to learn and grow. 🌱
-Looking ahead, I aim to leverage my skills and passion to contribute to innovative projects that can make a difference.
-I'm excited about the future and the endless possibilities it holds in our tech world. 🌌
+Outside of coding, I enjoy studying and playing the piano. 🎹
+I thrive on challenging myself with creative projects, consistently pushing the limits of my abilities.
+What started as a hobby has evolved into a passion for creating lightweight, and beautiful Applications. 🌌
 `;
+
+
+
+
+
 
 export const frontend_expertise = 
 `Frontend development is where I really shine, including HTML, CSS, and JavaScript.
@@ -39,7 +28,7 @@ Currently expanding my skill set with Rust and exploring Electron and Tauri for 
 
 export const history1 = 
 `It all started when I was a young pupil, attending a Scratch workshop at school.
-I was hooked, creating my account, fox_creations, and diving into the world of visual block programming.
+I was hooked, creating an account, diving into the world of programming, and never looking back.
 Instead of gaming, Scratch became my fixation, leading me to gain over 400 followers and create loads of games.`;
 
 export const history2 =
@@ -83,12 +72,3 @@ export const project4 =
 `Overall, I haven't had many projects yet, but I'm proud of the ones I've gotten pretty far with.
 I'm currently exploring new technologies, including Rust & Electron while also improving my skills in React, Next.js, and Vite.js.
 This about me website is my first React project, and I'm proud of how far I've come. 😊`;
-
-export const project5 = <p>
-  If you have any project ideas or want to collaborate, feel free to <Link offset={-80} smooth spy to="contact-me">reach me out <FontAwesomeIcon icon={faCaretDown} /></Link><br />
-  I'm always open to new opportunities and challenges. 🚀
-  <br /><br />
-  I'm also a part of the <a onClick={() => window.open(ELOSTACK_INVITE)}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> Elostack community</a>     ,
-  which is a start up that aims to provide a platform to create projects and share them with others.
-  We're the first ones to test the platform, and actively use it 🤗 
-</p>
