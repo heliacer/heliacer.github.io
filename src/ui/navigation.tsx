@@ -26,7 +26,7 @@ const NavLink: React.FC<NavLinkProps> = ({ name, icon}) => {
   )
   return (
     window.removeEventListener('hashchange',hashUpdate),
-    <Link offset={-100} activeClass="active" smooth spy to={name}>
+    <Link offset={-160} activeClass="active" smooth spy to={name}>
       <FontAwesomeIcon icon={icon} />
       <p>{capitalize(name)}</p>
     </Link>
